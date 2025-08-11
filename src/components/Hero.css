@@ -1,0 +1,72 @@
+/* --- src/components/Hero.css --- */
+.hero-section {
+    background-color: var(--white);
+    text-align: center;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-headline {
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-subheadline {
+    max-width: 900px; /* Constrain the width for better readability */
+    margin-bottom: 2rem;
+}
+
+.intrigue-section {
+    background-color: var(--background-gray);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 800px;
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.intrigue-intro {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--dark-navy);
+    margin-bottom: 1.5rem;
+}
+
+.intrigue-list {
+    list-style: none;
+    padding: 0;
+}
+
+.intrigue-list li {
+    padding-left: 35px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.intrigue-list li::before {
+    content: '✓';
+    color: #28a745; /* Green checkmark */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.urgency-snippet {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 1rem;
+    color: var(--supporting-gray);
+}

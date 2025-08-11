@@ -1,0 +1,35 @@
+/* --- src/components/LiveSlots.css --- */
+.live-slots-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.live-slots-data {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #ffd700; /* Accent Gold */
+    line-height: 1;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.live-slots-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #001f3f; /* Dark Navy */
+    margin-top: 0.5rem;
+}
+
+.live-slots-link {
+    margin-top: 1.5rem;
+    color: #6a737d; /* Supporting Gray */
+    text-decoration: underline;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.live-slots-link:hover {
+    color: #00a9e0; /* Primary Blue */
+}

@@ -1,42 +1,105 @@
+/* --- src/app/globals.css (v3.0 - Professional Trust Framework) --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;500;600&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Color Palette */
+  --primary-blue: #00a9e0;
+  --accent-gold: #ffd700;
+  --dark-navy: #001f3f;
+  --supporting-gray: #5a6472;
+  --background-gray: #f7f9fc;
+  --white: #ffffff;
+  --border-color: #e1e4e8;
+
+  /* Typography */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  --h1-size: 3.5rem;
+  --h2-size: 2.5rem;
+  --h3-size: 1.5rem;
+  --body-text-size: 1.125rem; /* 18px */
+
+  /* Layout */
+  --max-width: 1100px;
+  --section-padding: 6rem 1.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
+/* Responsive Typography */
+@media (max-width: 768px) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --h1-size: 2.25rem;
+    --h2-size: 1.8rem;
+    --body-text-size: 1rem; /* 16px */
+    --section-padding: 4rem 1.5rem;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+/* Global Reset */
+* { box-sizing: border-box; padding: 0; margin: 0; }
+html, body { max-width: 100vw; overflow-x: hidden; }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-body);
+  font-size: var(--body-text-size);
+  color: var(--supporting-gray);
+  background-color: var(--white);
+  line-height: 1.7;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--dark-navy);
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+h1 { font-size: var(--h1-size); }
+h2 { font-size: var(--h2-size); }
+h3 { font-size: var(--h3-size); }
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+section {
+  padding: var(--section-padding);
+}
+/* --- NEW: Primary CTA Button Style (v2.0 - High Conversion) --- */
+.cta-button-main {
+    display: inline-block;
+    
+    /* Color & Style */
+    background: linear-gradient(180deg, #00bfff 0%, #00a9e0 100%);
+    color: var(--white);
+    border-radius: 50px; /* Capsule Shape */
+    border: none;
+    
+    /* Size & Typography */
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1rem 3rem;
+    margin-top: 1.5rem;
+    font-family: var(--font-heading);
+    
+    /* 3D & Interactive Effects */
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    box-shadow: 0 5px 15px rgba(0, 169, 224, 0.4);
+    transition: all 0.2s ease-in-out;
+}
+
+.cta-button-main:hover {
+    top: -3px; /* Subtle "lift" animation */
+    box-shadow: 0 8px 25px rgba(0, 169, 224, 0.5);
+}
+
+.cta-button-main:active {
+    top: 0px; /* "Press down" animation */
+    box-shadow: 0 5px 15px rgba(0, 169, 224, 0.4);
 }

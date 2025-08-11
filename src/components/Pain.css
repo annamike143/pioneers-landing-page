@@ -1,0 +1,19 @@
+/* --- src/components/Pain.css --- */
+.pain-section {
+    background-color: var(--background-gray);
+}
+
+.pain-container {
+    text-align: center;
+    max-width: 800px; /* Constrain width for readability of text */
+}
+
+.pain-container h2 {
+    margin-bottom: 2rem;
+}
+
+.pain-container p {
+    font-size: 1.2rem; /* Slightly larger for impact */
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}

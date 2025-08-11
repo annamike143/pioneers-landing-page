@@ -1,0 +1,41 @@
+/* --- src/components/Solution.css --- */
+.solution-section {
+    background-color: var(--white);
+}
+
+.solution-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .solution-grid {
+        grid-template-columns: 1fr 1.5fr; /* Give more space to the story */
+        gap: 5rem;
+    }
+}
+
+.founder-image-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    line-height: 0;
+}
+
+.founder-story h2 {
+    margin-bottom: 2rem;
+}
+
+.founder-story p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.founder-story p:last-child {
+    font-weight: 700;
+    font-family: var(--font-heading);
+    color: var(--dark-navy);
+    font-size: 1.5rem;
+}
